@@ -1,0 +1,19 @@
+{
+  "name": "simple_clock",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "browserify src/scripts/clock.js src/scripts/page-functionality.js -o dist/bundle.js",
+    "reload_dev": "npm run build && npm run dev",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "date-and-time": "^3.6.0",
+    "dayjs": "^1.11.13"
+  }
+}
